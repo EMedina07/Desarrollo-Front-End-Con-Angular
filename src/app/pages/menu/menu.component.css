@@ -1,0 +1,9 @@
+div li {
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    background-color: darkkhaki;
+    border: 1px solid darkkhaki;
+    text-align: center;
+    color: black;
+}

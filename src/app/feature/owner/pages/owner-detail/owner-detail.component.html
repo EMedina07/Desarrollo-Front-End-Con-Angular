@@ -1,0 +1,18 @@
+<h5>Detalle de Cuentas</h5>
+<br><br>
+<table>
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>Fecha de creacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ownerDetail of ownerDetails;">
+            <td>{{ownerDetail.accountId}}</td>
+            <td>{{ownerDetail.accountType}}</td>
+            <td>{{ownerDetail.createDate}}</td>
+        </tr>
+    </tbody>
+</table>

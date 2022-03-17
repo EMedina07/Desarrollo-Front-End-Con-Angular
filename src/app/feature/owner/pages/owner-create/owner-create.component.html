@@ -1,0 +1,12 @@
+<form [formGroup]="ownerGroup" (ngSubmit)="CreateOwner(ownerGroup.value)">
+    <label for="name">Nombre :</label>
+    <input type="text" formControlName="name" />
+    <br>
+    <label>Fecha de Nacimiento:</label>
+    <input type="text" formControlName="birthDate" />
+    <br>
+    <label>Direccion:</label>
+    <input type="text" formControlName="address" />
+
+    <input type="submit" value="Crear" />
+</form>

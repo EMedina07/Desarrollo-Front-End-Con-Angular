@@ -1,0 +1,12 @@
+<form [formGroup]="ownerGroup"  (ngSubmit)="UpdateOwner(ownerGroup.value)">
+    <label>Nombre</label>
+    <input type="text" formControlName="name" />
+    <br>
+    <label>Direccion</label>
+    <input type="text" formControlName="address" />
+    <br>
+    <label>Fecha Nacimiento</label>
+    <input type="text" formControlName="birthDate" />
+    <br>
+    <input type="submit" value="Modificar" />
+</form>

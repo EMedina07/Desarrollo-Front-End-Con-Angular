@@ -1,0 +1,26 @@
+<a routerLink="/owner/create">Create New Owner</a>
+<br><br>
+<table class="tablet">
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Nombre</th>
+            <th>Nacimiento</th>
+            <th>Direccion</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let owner of owners;">
+            <td>{{owner.ownerId}}</td>
+            <td>{{owner.name}}</td>
+            <td style="padding-right: 30px;">{{owner.birthDate}}</td>
+            <td>{{owner.address}}</td>
+            <td><button id="detalle" (click)="RedirectToDetail(owner.ownerId)">Detalle</button></td>
+            <td><button id="editar" (click)="RedirectToUpdate(owner.ownerId)">Editar</button></td>
+            <td><button id="eliminar" (click)="RedirectToDelete(owner.ownerId)">Eliminar</button></td>
+        </tr>
+    </tbody>
+</table>

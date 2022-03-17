@@ -1,0 +1,21 @@
+<h5>Cuentas</h5>
+<br><br>
+<form [formGroup] = "accountForm" (ngSubmit)="RegisterAccount(accountForm.value)">
+    <label>Propietario</label>
+    <select id="ownerId" formControlName="ownerId">
+        <option selected disabled>
+            ...seleccione el propietario...
+        </option>
+        <option *ngFor="let owner of ownerList" [value]="owner.ownerId">
+            {{owner.name}}
+        </option>
+    </select>
+    <br>
+    <label>Tipo de cuenta</label>
+    <input type="text" id="accountType" formControlName="accountType" />
+    <br>
+    <label>Fecha de creacion</label>
+    <input type="text" id="createDate" formControlName="createDate" />
+    <br>
+    <input type="submit" value="Registrar" />
+</form>
